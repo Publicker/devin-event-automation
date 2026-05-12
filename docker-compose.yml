@@ -1,0 +1,13 @@
+services:
+  automation:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DEVIN_API_KEY=${DEVIN_API_KEY}
+      - DEVIN_ORG_ID=${DEVIN_ORG_ID}
+      - GITHUB_WEBHOOK_SECRET=${GITHUB_WEBHOOK_SECRET}
+      - PORT=3000
+      - DB_PATH=/app/data/sessions.db

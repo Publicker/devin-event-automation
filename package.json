@@ -1,0 +1,16 @@
+{
+  "name": "devin-event-automation",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/server.ts",
+    "start": "bun run src/server.ts",
+    "test": "bash test.sh"
+  },
+  "dependencies": {
+    "hono": "4.7.6"
+  },
+  "devDependencies": {
+    "@types/bun": "1.2.13"
+  }
+}
